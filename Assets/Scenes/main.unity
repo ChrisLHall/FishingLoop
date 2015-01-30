@@ -83,6 +83,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 41402301}
   - 212: {fileID: 41402300}
+  - 114: {fileID: 41402302}
+  - 61: {fileID: 41402303}
   m_Layer: 0
   m_Name: Hook
   m_TagString: Untagged
@@ -119,11 +121,33 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 41402299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0199999996, y: 2.04999995, z: .860000014}
+  m_LocalPosition: {x: .0199999996, y: 3.06999993, z: .860000014}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &41402302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41402299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3790f4b07180f340aaf05b81724b1f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &41402303
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41402299}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .100000001, y: .150000006}
+  m_Center: {x: 0, y: -.075000003}
 --- !u!1 &1269111831
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +242,7 @@ GameObject:
   - 4: {fileID: 1388074066}
   - 212: {fileID: 1388074065}
   - 114: {fileID: 1388074067}
+  - 61: {fileID: 1388074068}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -273,3 +298,14 @@ MonoBehaviour:
   xSpeed: 2
   ySpeedMax: 1
   swimFreq: .300000012
+--- !u!61 &1388074068
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388074064}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .150000006, y: .100000001}
+  m_Center: {x: 0, y: 0}

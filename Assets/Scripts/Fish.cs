@@ -6,11 +6,15 @@ public class Fish : MonoBehaviour {
 	public float ySpeedMax;
 	public float swimFreq;
 
+	private bool caught;
+	private bool outOfWater;
 	private int frameCount;
 
 	// Use this for initialization
 	void Start () {
-	
+		frameCount = 0;
+		caught = false;
+		outOfWater = false;
 	}
 	
 	// Update is called once per frame
